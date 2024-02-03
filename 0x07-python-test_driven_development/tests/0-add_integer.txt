@@ -1,3 +1,9 @@
-John Joe
-Mummy paul
-SHinji Kagawa
+===============================
+ How to Use add_integer.py
+==========================
+
+::
+	>>> from 0-add_integer import add_integer
+	>>> add_integer(1, 2)
+	3
+

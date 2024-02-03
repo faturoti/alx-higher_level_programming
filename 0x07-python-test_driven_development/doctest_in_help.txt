@@ -1,0 +1,8 @@
+===============================
+ How to Use doctest_in_help.py
+===============================
+
+::
+	>>> from doctest_in_help import my_function
+	>>> my_function(2, 3)
+	6
