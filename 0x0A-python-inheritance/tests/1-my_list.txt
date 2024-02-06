@@ -7,6 +7,7 @@ Using ``factorial``
 This is an example text file in reStructuredText format.  First import
 ``factorial`` from the ``example`` module:
 
+	>>> from 1-my_list import print_sorted
 	>>> print_sorted([1, 4, 2, 3, 5]);
 	[1, 4, 2, 3, 5]
 	>>> print_sorted([1, 2, 3, 4, 5]);
