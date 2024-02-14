@@ -7,7 +7,6 @@ import csv
 import turtle
 
 
-
 class Base:
     """Base model.
 
@@ -15,7 +14,6 @@ class Base:
     Private Class Attributes:
         __nb_object (int): Number of instantiated Bases.
     """
-
     __nb_objects = 0
 
     def __init__(self, id=None):
