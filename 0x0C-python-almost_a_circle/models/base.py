@@ -124,7 +124,9 @@ class Base:
                     writer.writerow(obj.to_dictionary())
 
     @classmethod
-        """Return a list of classes instantiated from a CSV file.
+    def load_from_file_csv(cls):
+        """Return a list of classes instantiated from a CSV fi.
+
         Reads from `<cls.__name__>.csv`.
 
         Returns:
@@ -140,7 +142,7 @@ class Base:
                     fieldnames = ["id", "size", "x", "y"]
                 list_dicts = csv.DictReader(csvfile, fieldnames=fieldnames)
                 list_dicts = [dict([k, int(v)] for k, v in d.items())
-                                            for d in list_dicts]
+                              for d in list_dicts]
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
